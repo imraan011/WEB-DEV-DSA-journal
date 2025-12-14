@@ -1,8 +1,0 @@
-{
-    "name": "auto-commit-system",
-    "version": "1.0.0",
-    "dependencies": {
-        "chokidar": "^3.5.3",
-        "nanoid": "^5.1.6"
-    }
-}

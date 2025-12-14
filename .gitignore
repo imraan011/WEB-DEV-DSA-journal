@@ -1,7 +1,0 @@
-node_modules/
-day_counter.txt
-commit_counter.txt
-last_date.txt
-*.log
-.vscode/
-commit-now.js
