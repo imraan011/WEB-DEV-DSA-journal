@@ -27,20 +27,31 @@ const App = () => {
       title,
       status: false,
     };
-    console.log(newtodo);
+
+    //simple way to add new todo
+    // const copytodo = [...todo];
+    // copytodo.push(newtodo);
+    // settodo(copytodo);
+
+    settodo([...todo, newtodo]);
+    settitle("");
   };
 
+  const rendertodo = todo.map((e) => {
+    return <li key={e.id}>{e.title}</li>;
+  });
   return (
     <div>
       <h1>TO DO LIST</h1>
       <form onSubmit={submithandler} action="">
         <input
           type="text"
-          placeholder="title"
+          value={title}
+          placeholder="Title"
           onChange={(e) => {
             settitle(e.target.value);
           }}
-        />{" "}
+        />
         <br />
         <br />
         <input
@@ -87,6 +98,12 @@ const App = () => {
         <option value="Amethi">Amethi</option>
         <option value="Chanderiya">Chanderiya</option>
       </select> */}
+      <hr />
+      <br />
+      <br />
+      <h1>Pending todo</h1>
+      <br />
+      <ul style={{ listStyleType: "square" }}>{rendertodo}</ul>
     </div>
   );
 };
