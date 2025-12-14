@@ -15,6 +15,7 @@ const App = () => {
   const [done, setdone] = useState(true);
   const [title, settitle] = useState("");
   const [gender, setgender] = useState("female");
+  const [city, setcity] = useState("Amethi");
 
   return (
     <div>
@@ -60,6 +61,19 @@ const App = () => {
         <br />
         <button>CREATE TODO</button>
       </form>
+      <br />
+      <br />
+      <select
+        value={city}
+        name=""
+        onChange={(e) => setcity(e.target.value)}
+        id=""
+      >
+        <option value="Delhi">Delhi</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Amethi">Amethi</option>
+        <option value="Chanderiya">Chanderiya</option>
+      </select>
     </div>
   );
 };
