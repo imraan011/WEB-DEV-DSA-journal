@@ -3,12 +3,15 @@ const Render = (props) => {
   const settodo = props.settodo;
 
   const rendertodo = todo.map((e) => {
-    return <li key={e.id}>{e.title}</li>;
+    return <li key={e.id}>{e.title} | Dele</li>;
+
   });
+
+
+
   return (
     <div>
       <hr />
-      <br />
       <br />
       <h1>Pending todo</h1>
       <br />
