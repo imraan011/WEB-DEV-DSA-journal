@@ -19,10 +19,10 @@ const App = () => {
 
   // const [gender, setgender] = useState("female");
   // const [city, setcity] = useState("Amethi");
-  
+
 
   return (
-    <div>
+    <div className="bg-amber-200 h-screen w ">
       <Create todo={todo} settodo={settodo} />
       <Render todo={todo} settodo={settodo} />
     </div>
