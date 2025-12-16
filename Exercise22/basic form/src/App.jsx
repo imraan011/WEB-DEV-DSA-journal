@@ -19,6 +19,7 @@ const App = () => {
 
   // const [gender, setgender] = useState("female");
   // const [city, setcity] = useState("Amethi");
+  
 
   return (
     <div>
