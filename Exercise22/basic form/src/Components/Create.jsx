@@ -19,6 +19,7 @@ const Create = (props) => {
     // const copytodo = [...todo];
     // copytodo.push(newtodo);
     // settodo(copytodo);
+    //
 
     settodo([...todo, newtodo]);
     settitle("");
