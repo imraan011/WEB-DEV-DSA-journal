@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { useState } from "react";
 import { nanoid } from "nanoid";
 
@@ -10,18 +10,21 @@ const Create = (props) => {
 
   const submithandler = (e) => {
     e.preventDefault();
-    const newtodo = {
-      id: nanoid(),
-      text: title,
-      completed: false,
-    };
-    console.log(newtodo);
-    settitle("");
-    settodo([...todo, newtodo]);
+
+    if (title.length > 0) {
+      const newtodo = {
+        id: nanoid(),
+        text: title,
+        completed: false,
+      };
+
+      settitle("");
+      settodo([...todo, newtodo]);
+    }
   };
 
   return (
-    <>
+    <Fragment>
       <form action="" onSubmit={submithandler}>
         <h1 className="text-4xl text-stone-700 tracking-tight justify-center text-center font-bold uppercase">
           Your To Do
@@ -32,7 +35,7 @@ const Create = (props) => {
             type="text"
             className=" text-2xl w-full  outline-0 border-b-2"
             value={title}
-            placeholder="hello"
+            placeholder="Enter your task"
             onChange={(e) => settitle(e.target.value)}
             name=""
             id=""
@@ -43,7 +46,7 @@ const Create = (props) => {
         </div>
         <br />
       </form>
-    </>
+    </Fragment>
   );
 };
 
