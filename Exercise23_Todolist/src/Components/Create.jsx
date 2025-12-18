@@ -25,10 +25,12 @@ const Create = (props) => {
 
   return (
     <Fragment>
+      <br />
       <form action="" onSubmit={submithandler}>
         <h1 className="text-4xl text-stone-700 tracking-tight justify-center text-center font-bold uppercase">
           Your To Do
         </h1>
+        
         <br />
         <div className="flex w-full justify-between">
           <input

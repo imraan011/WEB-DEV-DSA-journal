@@ -45,10 +45,17 @@ const Render = (props) => {
       </div>
     );
   });
-
+  for (let i = 0; i < todo.length; i++) {
+    if (todo[i].completed == true) {
+      var remainingTasks = todo.length - 1;
+    } else {
+      var remainingTasks = todo.length;
+    }
+  }
   return (
     <div>
       <h1 className="text-2xl font-thin">{render}</h1>
+      <h1 className="absolute top-3 font-thin capitalize">remaining Task : {remainingTasks}</h1>
     </div>
   );
 };
