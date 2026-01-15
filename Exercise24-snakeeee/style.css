@@ -15,6 +15,7 @@ body {
 
 :root {
   --bg-primary-color: rgb(28, 28, 28);
+  --bg-filled-color: rgb(203, 255, 195);
   --text-primary-color: rgb(233, 233, 233);
   --text-secondary-color: rgb(29, 173, 0);
   --spacing-xs: 4px;
@@ -51,11 +52,12 @@ main section .board {
   border: 2px solid var(--border-primary-color);
   border-radius: var(--border-radius-sm);
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmaX(30px, 1fr));
-  grid-template-rows: repeat(auto-fill, minmaX(30px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmaX(50px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmaX(50px, 1fr));
 }
 main section .board .box {
-  height: 30px;
-  width: 30px;
   border: 1px solid var(--border-primary-color);
+}
+main section .board .filled {
+  background-color: var(--bg-filled-color);
 }/*# sourceMappingURL=style.css.map */
