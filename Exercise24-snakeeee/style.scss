@@ -29,4 +29,7 @@ main {
   padding: var(--spacing-sm);
   background: var(--primary-color);
   color: var(--secondary-color);
+  section{
+    background: #000;
+  }
 }
