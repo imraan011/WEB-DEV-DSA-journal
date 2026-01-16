@@ -6,4 +6,4 @@ function leap(year) {
   } 
     
 }
-console.log(leap(2020)); // true
+console.log(leap(2020)); // true  
