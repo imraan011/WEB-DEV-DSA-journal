@@ -8,8 +8,7 @@ function sumOfDigits(n) {
      n=Math.floor(n/10);
     }
     console.log(sum);
-    return sum;
     
 }
 
-sumOfDigits(1234); // Output: 10
+sumOfDigits(465); // Output: 15
