@@ -1,14 +1,8 @@
-function sumOfDigits(n) {
-    // Write your logic here
-     let sum = 0;
-    while(n>0){
-        
-     let temp= n % 10 ;
-     sum+=temp;
-     n=Math.floor(n/10);
-    }
-    console.log(sum);
-    
+let n = 120;
+let sum = 0
+while (n > 0) {
+    let digit = n % 10;
+    sum += digit;
+    n = Math.floor(n / 10);
 }
-
-sumOfDigits(465); // Output: 15
+console.log(sum);

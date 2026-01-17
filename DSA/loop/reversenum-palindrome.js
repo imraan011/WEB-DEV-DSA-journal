@@ -14,5 +14,5 @@ if (temp === rev) {
     console.log("not palindrome");
 }
 
-
 console.log(rev);
+
