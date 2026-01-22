@@ -1,33 +1,9 @@
-//butterfly pattern
 
-var prompt = require("prompt-sync")();
-const n = 7;
-// const n = Number(prompt("Enter the number "))
-for (let i = 1; i <= n; i++) {
-//   upper half
-  for (let j = 1; j <= i; j++) {
-    process.stdout.write("* ");
-  }
-  for (let k = 1; k <= 2 * (n - i); k++) {
-    process.stdout.write("  ");
-  }
-  for (let l = 1; l <= i; l++) {
-    process.stdout.write("* ");
-  }
-  console.log();
+
+let arr = [1,2,3,4,5]
+let n = arr.length;
+for (let i = 0; i < n-1; i++) {
+    arr[i]=arr[i+1]    
 }
-
-for (let i = n; i >= 1; i--) {
-//   lower half
-  for (let j = 1; j <= i; j++) {
-    process.stdout.write("* ");
-  }
-  for (let k = 1; k <= 2 * (n - i); k++) {
-    process.stdout.write("  ");
-  }
-  for (let l = 1; l <= i; l++) {
-    process.stdout.write("* ");
-  }
-  console.log();
-}
-
+arr.length = n-1 
+console.log(arr);
