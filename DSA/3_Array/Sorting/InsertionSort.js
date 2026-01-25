@@ -9,3 +9,4 @@ for (let i = 1; i < arr.length; i++) {
   arr[j + 1] = key;
 }
 console.log(arr);
+
