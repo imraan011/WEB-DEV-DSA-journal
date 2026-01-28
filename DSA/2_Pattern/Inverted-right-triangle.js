@@ -11,4 +11,5 @@ function inverted_rightanglepattern() {
   }
 }
 
+
 inverted_rightanglepattern();

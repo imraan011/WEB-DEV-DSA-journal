@@ -20,5 +20,4 @@ function X_pattern() {
     console.log();
   }
 }
-
 X_pattern();

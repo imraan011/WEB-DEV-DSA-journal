@@ -22,4 +22,5 @@ function right_rightanglepattern() {
   }
 }
 
+
 right_rightanglepattern();

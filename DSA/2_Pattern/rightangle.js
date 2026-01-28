@@ -8,6 +8,5 @@ function righttripattern() {
     console.log();
   }
 }
-
 righttripattern();
 

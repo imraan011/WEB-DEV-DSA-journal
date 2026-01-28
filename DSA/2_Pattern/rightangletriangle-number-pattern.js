@@ -8,5 +8,4 @@ function rightanglenumpattern() {
     console.log();
   }
 }
-
 rightanglenumpattern();

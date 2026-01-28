@@ -22,5 +22,4 @@ function V_pattern() {
     console.log();
   }
 }
-
 V_pattern();

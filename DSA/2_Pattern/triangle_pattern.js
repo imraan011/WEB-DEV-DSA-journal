@@ -20,5 +20,4 @@ function trianglepattern() {
     console.log();
   }
 }
-
 trianglepattern();
