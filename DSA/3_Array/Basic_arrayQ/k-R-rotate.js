@@ -20,14 +20,12 @@ function reversal(arr, i, j) {
 }
 console.log(arr);
 
-
-
 //brute force
 let arr1 = [1, 2, 3, 4, 5];
 let temp = new Array(arr1.length);
 let n = 1;
 n = n % arr1.length;
 for (let i = 0; i < arr1.length; i++) {
-  temp[i] = arr1[[i -n+arr1.length]%arr1.length];
+  temp[i] = arr1[[i - n + arr1.length] % arr1.length];
 }
 console.log(temp);
