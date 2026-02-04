@@ -18,3 +18,5 @@ console.log(s.split(" "));
 console.log(s.replaceAll(" " , "."));
 console.log(s.charAt(4));
 console.log(s.charCodeAt(0));
+//reverse the whole string
+console.log(s.split("").reverse().join(""))
