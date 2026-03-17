@@ -1,5 +1,6 @@
 
 var trap = function(arr) {
+     if(arr.length == 0) return 0
     let leftMax = arr[0] , rightMax = arr[arr.length-1]
     let left = new Array(arr.length)
     left[0] = arr[0]
