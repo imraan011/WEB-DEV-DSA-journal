@@ -3,7 +3,8 @@
 function conquer(arr, f, l, mid) {
   let temp = new Array(l - f + 1);
   let i = f,
-    j = mid + 1;
+    j = mid + 1,
+    k = 0;
   while (i <= mid && j <= l) {
     if (arr[i] < arr[j]) {
       temp[k] = arr[i];
@@ -34,13 +35,12 @@ function conquer(arr, f, l, mid) {
   }
 }
 
-function divide(arr, f, l){
-    if(f>=l)return
-    let mid  = Math.floor((f+l)/2)
-    divide(arr, f , mid)
-    divide(arr , mid+1 , l)
-    conquer(arr , f , l , mid)
-
+function divide(arr, f, l) {
+  if (f >= l) return;
+  let mid = Math.floor((f + l) / 2);
+  divide(arr, f, mid);
+  divide(arr, mid + 1, l);
+  conquer(arr, f, l, mid);
 }
 
 let arr = [5, 4, 3, 2, 1];
