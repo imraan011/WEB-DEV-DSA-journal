@@ -27,7 +27,7 @@ function conquer(arr, f, l, mid) {
     j++;
     k++;
   }
-
+   k =0 , i = f
   while (k < temp.length) {
     arr[i] = temp[k];
     i++;
