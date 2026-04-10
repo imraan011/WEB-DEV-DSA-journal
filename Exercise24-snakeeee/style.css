@@ -16,6 +16,7 @@ body {
 :root {
   --bg-primary-color: rgb(28, 28, 28);
   --bg-filled-color: rgb(203, 255, 195);
+  --bg-food-color: rgb(255, 0, 0);
   --text-primary-color: rgb(233, 233, 233);
   --text-secondary-color: rgb(29, 173, 0);
   --spacing-xs: 4px;
@@ -36,6 +37,17 @@ main section {
   display: flex;
   flex-direction: column;
   padding: var(--spacing-lg);
+}
+main section .btn {
+  padding: var(--spacing-sm) var(--spacing-md);
+  border: 2px solid var(--border-primary-color);
+  border-radius: var(--border-radius-md);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+main section .btn:hover {
+  background-color: var(--bg-filled-color);
+  scale: 0.98;
 }
 main section .infos {
   display: flex;
@@ -60,4 +72,25 @@ main section .board .box {
 }
 main section .board .filled {
   background-color: var(--bg-filled-color);
+}
+main section .board .food {
+  background-color: var(--bg-food-color);
+}
+main section .modal {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(89, 90, 89, 0.012);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section .modal .startgame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-lg);
 }/*# sourceMappingURL=style.css.map */
