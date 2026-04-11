@@ -32,6 +32,10 @@ body {
   --border-primary-color: rgb(50, 50, 50);
 }
 
+main {
+  height: 100%;
+  overflow: hidden;
+}
 main section {
   height: 100vh;
   display: flex;
@@ -46,8 +50,7 @@ main section .btn {
   transition: all 0.3s ease;
 }
 main section .btn:hover {
-  background-color: var(--bg-filled-color);
-  scale: 0.98;
+  scale: 1.05;
 }
 main section .infos {
   display: flex;
@@ -68,6 +71,7 @@ main section .board {
   grid-template-rows: repeat(auto-fill, minmaX(50px, 1fr));
 }
 main section .board .box {
+  border-radius: 50%;
   border: 1px solid var(--border-primary-color);
 }
 main section .board .filled {
@@ -90,6 +94,18 @@ main section .modal {
 }
 main section .modal .startgame {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-lg);
+}
+main section .modal .Restartbtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-lg);
+}
+main section .modal .gameover {
+  display: none;
   flex-direction: column;
   align-items: center;
   gap: var(--spacing-lg);
